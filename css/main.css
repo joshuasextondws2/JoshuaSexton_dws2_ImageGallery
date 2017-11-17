@@ -96,32 +96,53 @@ img {
 #gallery {
   margin-right: auto;
   margin-left: auto; }
-  @media (min-width: 300px) {
-    #gallery {
-      width: 100%; } }
-  @media (min-width: 700px) {
-    #gallery {
-      width: 95%; } }
   @media (min-width: 1000px) {
     #gallery {
-      width: 100%;
       margin-bottom: 12rem; } }
 
 #gallery li {
   width: 80%;
+  display: flex;
   flex-direction: column;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 3rem;
   position: relative; }
+  @media (min-width: 300px) {
+    #gallery li {
+      height: 155px;
+      width: 98%; } }
+  @media (min-width: 370px) {
+    #gallery li {
+      height: 200px;
+      width: 98%; } }
+  @media (min-width: 400px) {
+    #gallery li {
+      height: 230px; } }
+  @media (min-width: 460px) {
+    #gallery li {
+      height: 250px; } }
+  @media (min-width: 560px) {
+    #gallery li {
+      height: 290px; } }
+  @media (min-width: 560px) {
+    #gallery li {
+      height: 300px; } }
+  @media (min-width: 630px) {
+    #gallery li {
+      height: 360px; } }
   @media (min-width: 700px) {
     #gallery li {
       flex-direction: row;
       flex-wrap: wrap;
-      width: 220px;
-      height: 220px;
+      width: 200px;
+      height: 200px;
       margin-right: 1rem;
       margin-bottom: 1rem; } }
+  @media (min-width: 867px) {
+    #gallery li {
+      width: 240px;
+      height: 240px; } }
   @media (min-width: 1000px) {
     #gallery li {
       width: 300px;
@@ -148,8 +169,11 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 25%;
+  height: 50%;
   transition: .6s ease; }
+  @media (min-width: 400px) {
+    #overlay {
+      height: 30%; } }
   @media (min-width: 700px) {
     #overlay {
       height: 30%; } }

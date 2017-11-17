@@ -35,7 +35,7 @@ request.onload = function(){
 				para2.id="likes"                 
 				newImage.src = data.results[i].urls.thumb; 
         		newImage.srcset = data.results[i].urls.regular +" 1080w,"+ data.results[i].urls.small+" 400w ," + data.results[i].urls.thumb+" 200w";
-        		newImage.sizes= "(max-width:300px) 100vw,(max-width: 700px) 33.3vw";
+        		newImage.sizes= "(max-width:300px) 100vw,(max-width:500px) 20vw, (max-width: 700px) 33.3vw";
         		var resultsList = document.getElementById('galleryList');
         		resultsList.appendChild(newLi);
         		newLi.appendChild(newImage);
