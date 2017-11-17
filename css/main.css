@@ -149,7 +149,7 @@ img {
   right: 0;
   bottom: 0;
   height: 25%;
-  transition: .9s ease; }
+  transition: .6s ease; }
   @media (min-width: 700px) {
     #overlay {
       height: 30%; } }
