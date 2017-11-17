@@ -127,7 +127,7 @@ img {
       width: 300px;
       height: 280px;
       margin-bottom: 2rem;
-      margin-right: 2rem; } }
+      margin-right: 1rem; } }
 
 #name {
   color: white;
@@ -143,34 +143,33 @@ img {
 
 #overlay {
   position: absolute;
-  transition: 6s ease;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 25%; }
+  height: 25%;
+  transition: .9s ease; }
   @media (min-width: 700px) {
     #overlay {
       height: 30%; } }
   @media (min-width: 1000px) {
     #overlay {
-      display: none;
+      display: block;
+      opacity: 0;
+      height: 0px;
       width: 300px; } }
 
 li:hover #overlay {
-  display: block; }
+  opacity: 1;
+  height: 25%; }
 
 .globe {
-  animation: spin 6s linear; }
+  animation: spin 2s linear; }
 
 @keyframes spin {
   100% {
     transform: rotateY(360deg); } }
-
-@keyframes slideUp {
-  100% {
-    transform: tanslate(-50%, -50%); } }
 
 footer {
   text-align: center;
