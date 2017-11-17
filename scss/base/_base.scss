@@ -1,0 +1,70 @@
+html{
+	font-family: $font-stack;
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+header{
+	margin-bottom: 2rem;
+}
+
+h1{
+	width: 50px; 
+    height: 50px;
+    background: url("../images/globe.svg");
+    background-repeat: no-repeat;
+    text-indent:-9999px;
+    margin-top: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+#galleryList{
+	list-style: none;
+}
+
+h2{
+	margin-right:auto;
+	margin-left: auto;
+	width: 34%;
+	font-size: 30px;
+}
+
+header p{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+}
+
+img{
+	@include mq(small){
+		width: 100%;
+	
+	}
+	display: block;
+	width: auto;
+	height:auto;
+}
+
+#galleryList{
+	@include mq(small){
+		flex-direction: column;
+	
+	}
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 0;
+}
+
+#gallery li{
+	width: 80%;
+	flex-direction: column;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 1rem;
+	
+
+}
