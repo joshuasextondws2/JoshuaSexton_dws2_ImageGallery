@@ -23,13 +23,26 @@ request.onload = function(){
         	for (i = 0; i < 9; i++) {
         		var newLi = document.createElement('Li');
         		var newImage = document.createElement('img');
-        		newImage.src = data.results[i].urls.thumb; 
+        		var newDiv = document.createElement('div');
+        		newDiv.id= "overlay";
+        		var para = document.createElement("P");  
+        		var p = document.createTextNode(data.results[i].user.name); 
+        		para.appendChild(p);  
+        		para.id="name";                 
+				var para2 = document.createElement("P"); 
+				var p2 = document.createTextNode(data.results[i].likes); 
+				para2.appendChild(p2);  
+				para2.id="likes"                 
+				newImage.src = data.results[i].urls.thumb; 
         		newImage.srcset = data.results[i].urls.regular +" 1080w,"+ data.results[i].urls.small+" 400w ," + data.results[i].urls.thumb+" 200w";
-        		newImage.size= "100%";
+        		newImage.sizes= "(max-width:300px) 100vw,(max-width: 700px) 33.3vw";
         		var resultsList = document.getElementById('galleryList');
         		resultsList.appendChild(newLi);
         		newLi.appendChild(newImage);
-        		}
+        		newLi.appendChild(newDiv);
+        		newDiv.appendChild(para);
+        		newDiv.appendChild(para2);
+}
 		}
 			} else {
 		// code for Response Errors

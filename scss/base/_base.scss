@@ -6,6 +6,9 @@ html{
 
 header{
 	margin-bottom: 2rem;
+	 @include mq(large){
+	 margin-bottom: 6rem;
+	 }
 }
 
 h1{
@@ -18,6 +21,15 @@ h1{
     margin-left: auto;
     margin-right: auto;
     width: 20%;
+    @include mq(medium){
+    	width: 12%;
+    }
+    @include mq(large){
+   	 	width: 8%;
+    }
+    @media(min-width: 1000px){
+    	width: 5%;
+    }
 }
 
 #galleryList{
@@ -29,18 +41,47 @@ h2{
 	margin-left: auto;
 	width: 34%;
 	font-size: 30px;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	@include mq(medium){
+		width: 35%;
+		font-size: 50px;
+	}
+	@include mq(large){
+		width: 30%;
+		font-size: 80px;
+}
+	 @media(min-width: 1000px){
+    	width: 18%;
+    	font-size: 60px;
+    	
+    }
+	
 }
 
 header p{
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
+	@include mq(medium){
+		width: 100%;
+	}
+	@include mq(large){
+		width: 98%;
+    	font-size: 24px;
+    }
+     @media(min-width: 1000px){
+     	width: 60%;
+    	font-size: 16px;
+     }
 }
 
 img{
 	@include mq(small){
 		width: 100%;
-	
+	}
+	@include mq(large){
+		height: 100%;
 	}
 	display: block;
 	width: auto;
@@ -50,8 +91,12 @@ img{
 #galleryList{
 	@include mq(small){
 		flex-direction: column;
-	
 	}
+	@include mq(small){
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
 	margin-right: auto;
 	margin-left: auto;
 	display: flex;
@@ -59,12 +104,51 @@ img{
 	padding-left: 0;
 }
 
+#gallery{
+	@include mq(small){
+		width: 100%;
+	}
+	@include mq(large){
+		width: 95%;
+	}
+	margin-right: auto;
+	margin-left: auto;
+}
+
 #gallery li{
 	width: 80%;
 	flex-direction: column;
 	margin-right: auto;
 	margin-left: auto;
-	margin-bottom: 1rem;
-	
+	margin-bottom: 3rem;
+	@include mq(large){
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 220px;
+		height: 220px;
+		margin-right: 1rem;
+		margin-bottom: 1rem;
+		
+	}
+
+}
+
+#name{
+background-image: url("../images/user-icon.svg");
+background-repeat: no-repeat;
+padding-left: 25px;
+}
+
+#likes{
+background-image: url("../images/heart.svg");
+background-repeat: no-repeat;
+padding-left: 25px;
+}
+
+#overlay{
+@include mq(large){
+display: none;
+
+}
 
 }

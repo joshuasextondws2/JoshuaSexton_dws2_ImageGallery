@@ -5,6 +5,9 @@ html {
 
 header {
   margin-bottom: 2rem; }
+  @media (min-width: 700px) {
+    header {
+      margin-bottom: 6rem; } }
 
 h1 {
   width: 50px;
@@ -16,6 +19,15 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   width: 20%; }
+  @media (min-width: 400px) {
+    h1 {
+      width: 12%; } }
+  @media (min-width: 700px) {
+    h1 {
+      width: 8%; } }
+  @media (min-width: 1000px) {
+    h1 {
+      width: 5%; } }
 
 #galleryList {
   list-style: none; }
@@ -24,12 +36,37 @@ h2 {
   margin-right: auto;
   margin-left: auto;
   width: 34%;
-  font-size: 30px; }
+  font-size: 30px;
+  margin-top: 1rem;
+  margin-bottom: 1rem; }
+  @media (min-width: 400px) {
+    h2 {
+      width: 35%;
+      font-size: 50px; } }
+  @media (min-width: 700px) {
+    h2 {
+      width: 30%;
+      font-size: 80px; } }
+  @media (min-width: 1000px) {
+    h2 {
+      width: 18%;
+      font-size: 60px; } }
 
 header p {
   margin-left: auto;
   margin-right: auto;
   width: 90%; }
+  @media (min-width: 400px) {
+    header p {
+      width: 100%; } }
+  @media (min-width: 700px) {
+    header p {
+      width: 98%;
+      font-size: 24px; } }
+  @media (min-width: 1000px) {
+    header p {
+      width: 60%;
+      font-size: 16px; } }
 
 img {
   display: block;
@@ -38,6 +75,9 @@ img {
   @media (min-width: 300px) {
     img {
       width: 100%; } }
+  @media (min-width: 700px) {
+    img {
+      height: 100%; } }
 
 #galleryList {
   margin-right: auto;
@@ -48,13 +88,49 @@ img {
   @media (min-width: 300px) {
     #galleryList {
       flex-direction: column; } }
+  @media (min-width: 300px) {
+    #galleryList {
+      flex-direction: row;
+      flex-wrap: wrap; } }
+
+#gallery {
+  margin-right: auto;
+  margin-left: auto; }
+  @media (min-width: 300px) {
+    #gallery {
+      width: 100%; } }
+  @media (min-width: 700px) {
+    #gallery {
+      width: 95%; } }
 
 #gallery li {
   width: 80%;
   flex-direction: column;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 1rem; }
+  margin-bottom: 3rem; }
+  @media (min-width: 700px) {
+    #gallery li {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 220px;
+      height: 220px;
+      margin-right: 1rem;
+      margin-bottom: 1rem; } }
+
+#name {
+  background-image: url("../images/user-icon.svg");
+  background-repeat: no-repeat;
+  padding-left: 25px; }
+
+#likes {
+  background-image: url("../images/heart.svg");
+  background-repeat: no-repeat;
+  padding-left: 25px; }
+
+@media (min-width: 700px) {
+  #overlay {
+    display: none; } }
 
 footer {
   text-align: center;
