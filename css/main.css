@@ -130,47 +130,44 @@ img {
       margin-right: 2rem; } }
 
 #name {
+  color: white;
   background-image: url("../images/user-icon.svg");
   background-repeat: no-repeat;
-  padding-left: 25px;
-  color: black; }
-  @media (min-width: 1000px) {
-    #name {
-      color: white; } }
+  padding-left: 25px; }
 
 #likes {
   background-image: url("../images/heart.svg");
   background-repeat: no-repeat;
   padding-left: 25px;
-  color: black; }
+  color: white; }
+
+#overlay {
+  position: absolute;
+  transition: 6s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 25%; }
+  @media (min-width: 700px) {
+    #overlay {
+      height: 30%; } }
   @media (min-width: 1000px) {
-    #likes {
-      color: white; } }
-
-@media (min-width: 700px) {
-  #overlay {
-    display: none; } }
-
-@media (min-width: 1000px) {
-  #overlay {
-    position: absoute;
-    width: 280px;
-    height: 20%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); } }
+    #overlay {
+      display: none;
+      width: 300px; } }
 
 li:hover #overlay {
   display: block; }
 
 .globe {
-  animation: spin 10s linear; }
+  animation: spin 6s linear; }
 
 @keyframes spin {
   100% {
-    transform: rotate(359deg); } }
+    transform: rotateY(360deg); } }
 
 @keyframes slideUp {
   100% {
