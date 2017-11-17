@@ -62,3 +62,10 @@ request.onerror = function(){
 request.send();
 })
 
+document.querySelector("h2").onclick = function() {changeClass()}
+
+function changeClass(){
+	const travel = document.querySelector("h1");
+	travel.className = "globe"; 
+
+}
