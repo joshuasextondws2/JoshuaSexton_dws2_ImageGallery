@@ -96,7 +96,6 @@ img{
 		flex-direction: row;
 		flex-wrap: wrap;
 	}
-	
 	margin-right: auto;
 	margin-left: auto;
 	display: flex;
@@ -127,6 +126,7 @@ img{
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 3rem;
+	position: relative;
 	@include mq(large){
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -144,35 +144,45 @@ img{
 	}
 
 #name{
+	@media(min-width: 1000px){
+		color:white;
+	}
 background-image: url("../images/user-icon.svg");
 background-repeat: no-repeat;
 padding-left: 25px;
-}
+color: black;
+	}
 
 #likes{
+	@media(min-width: 1000px){
+		color:white;
+	}
 background-image: url("../images/heart.svg");
 background-repeat: no-repeat;
 padding-left: 25px;
+color: black;
 }
 
 #overlay{
-@include mq(large){
-display: none;
-}@media(min-width: 1000px){
-	position: fixed;
+	@include mq(large){
+	display: none;
+}
+@media(min-width: 1000px){
+	position: absoute;
   	width: 280px;
-    height: 10%;
+    height: 20%;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(0,0,0,0.5);
+   
 }
 }
 
+
 li:hover #overlay{
 	display: block;
-	animation: slide up .8s ease;
 }
 
 .globe{

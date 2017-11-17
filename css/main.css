@@ -112,7 +112,8 @@ img {
   flex-direction: column;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  position: relative; }
   @media (min-width: 700px) {
     #gallery li {
       flex-direction: row;
@@ -131,12 +132,20 @@ img {
 #name {
   background-image: url("../images/user-icon.svg");
   background-repeat: no-repeat;
-  padding-left: 25px; }
+  padding-left: 25px;
+  color: black; }
+  @media (min-width: 1000px) {
+    #name {
+      color: white; } }
 
 #likes {
   background-image: url("../images/heart.svg");
   background-repeat: no-repeat;
-  padding-left: 25px; }
+  padding-left: 25px;
+  color: black; }
+  @media (min-width: 1000px) {
+    #likes {
+      color: white; } }
 
 @media (min-width: 700px) {
   #overlay {
@@ -144,9 +153,9 @@ img {
 
 @media (min-width: 1000px) {
   #overlay {
-    position: fixed;
+    position: absoute;
     width: 280px;
-    height: 10%;
+    height: 20%;
     top: 0;
     left: 0;
     right: 0;
@@ -154,8 +163,7 @@ img {
     background-color: rgba(0, 0, 0, 0.5); } }
 
 li:hover #overlay {
-  display: block;
-  animation: slide up .8s ease; }
+  display: block; }
 
 .globe {
   animation: spin 10s linear; }
