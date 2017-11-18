@@ -195,16 +195,18 @@ img{
     }
 	@media(min-width: 1000px){
 		display: block;
-		opacity: 0;
+		overflow: hidden;
 		height: 0px;
 		width: 300px;
 		}
 }
 
 
-li:hover #overlay{
-	opacity: 1;
+
+@media(min-width: 1000px){
+	li:hover #overlay{
 	height: 25%;
+}
 }
 
 .globe{
