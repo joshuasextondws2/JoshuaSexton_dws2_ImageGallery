@@ -99,6 +99,9 @@ img {
   @media (min-width: 1000px) {
     #gallery {
       margin-bottom: 12rem; } }
+  @media (min-width: 1270px) {
+    #gallery {
+      width: 85%; } }
 
 #gallery li {
   width: 80%;
@@ -149,6 +152,10 @@ img {
       height: 280px;
       margin-bottom: 2rem;
       margin-right: 1rem; } }
+  @media (min-width: 1270px) {
+    #gallery li {
+      width: 400;
+      height: 380; } }
 
 #name {
   color: white;

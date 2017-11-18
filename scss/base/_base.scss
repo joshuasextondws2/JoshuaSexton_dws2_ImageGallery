@@ -107,6 +107,9 @@ img{
 	@media(min-width: 1000px){
 		margin-bottom: 12rem;
 	}
+	@media(min-width: 1270px){
+		width: 85%;
+		}
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -159,6 +162,10 @@ img{
 		height: 280px;
 		margin-bottom: 2rem;
 		margin-right: 1rem;
+	}
+	@media(min-width: 1270px){
+		width: 400;
+		height: 380;
 	}
 	}
 
