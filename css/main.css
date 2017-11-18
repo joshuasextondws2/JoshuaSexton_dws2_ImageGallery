@@ -161,13 +161,15 @@ img {
   color: white;
   background-image: url("../images/user-icon.svg");
   background-repeat: no-repeat;
-  padding-left: 25px; }
+  padding-left: 25px;
+  margin-left: 9px; }
 
 #likes {
   background-image: url("../images/heart.svg");
   background-repeat: no-repeat;
   padding-left: 25px;
-  color: white; }
+  color: white;
+  margin-left: 9px; }
 
 #overlay {
   position: absolute;
